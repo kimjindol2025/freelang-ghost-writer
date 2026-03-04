@@ -9,6 +9,7 @@
 pub mod fonts;
 pub mod sdf;
 pub mod rendering;
+pub mod console;
 
 pub use fonts::{
     TTFParser,
@@ -43,4 +44,15 @@ pub use rendering::{
     TextRenderEngine,
     GlyphRasterizer,
     RenderCache,
+};
+
+pub use console::{
+    SovereignConsole,
+    ConsoleBuffer,
+    ConsoleCursor,
+    TextAttributes,
+    TextLayoutEngine,
+    UnicodeChar,
+    ConsolePerformance,
+    ConsoleTheme,
 };
