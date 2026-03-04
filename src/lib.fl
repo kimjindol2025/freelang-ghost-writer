@@ -8,6 +8,7 @@
 
 pub mod fonts;
 pub mod sdf;
+pub mod rendering;
 
 pub use fonts::{
     TTFParser,
@@ -32,4 +33,14 @@ pub use sdf::{
     distance_point_to_bezier,
     signed_distance,
     is_point_inside_outline,
+};
+
+pub use rendering::{
+    DMAController,
+    DMARenderPipeline,
+    FramebufferMMIO,
+    Pixel32,
+    TextRenderEngine,
+    GlyphRasterizer,
+    RenderCache,
 };
